@@ -4,30 +4,20 @@ img {
   display: block;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.grid-item {
-  background-color: rgb(60, 207, 252);
-  border: 1px solid rgba(0, 0, 0);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-.grid-container {
-  background-color: #2196f3;
-  padding: 10px;
-
+.grid_2col_2-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 10px;
+}
+
+@media (min-width: 1200px;) {
+  .grid_2col_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .order {
+    order: -1;
+  }
 }
